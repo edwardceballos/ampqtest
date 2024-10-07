@@ -31,3 +31,4 @@
 /home/sisu/projects/Nexpass/sandbox/AmpqTest/obj/Debug/net8.0/AmpqTest.pdb
 /home/sisu/projects/Nexpass/sandbox/AmpqTest/obj/Debug/net8.0/AmpqTest.genruntimeconfig.cache
 /home/sisu/projects/Nexpass/sandbox/AmpqTest/obj/Debug/net8.0/ref/AmpqTest.dll
+/home/sisu/projects/Nexpass/sandbox/AmpqTest/obj/Debug/net8.0/AmpqTest.sourcelink.json

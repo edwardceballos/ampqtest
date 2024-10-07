@@ -1,4 +1,5 @@
-﻿using MassTransit;
+﻿using AmpqTest.Messages;
+using MassTransit;
 using Spectre.Console;
 
 var appTitle = new FigletText("ActiveMQ Test App")
@@ -6,7 +7,6 @@ var appTitle = new FigletText("ActiveMQ Test App")
                 .Color(Color.Green);
             AnsiConsole.Write(appTitle);
 
-            // Fetch connection details from environment variables or use default values
             string defaultHost = "ex-aao-all-0-svc-rte-amq.apps.ocp.minvivienda.gov.co";
             string defaultUsername = "vcnhyZM6";
             string defaultPassword = "a0JNynz";
@@ -36,7 +36,7 @@ var appTitle = new FigletText("ActiveMQ Test App")
                     {
                         e.UseMessageRetry(r => r.Interval(5, TimeSpan.FromSeconds(2)));
 
-                        e.Handler<TestMessage>(async context =>
+                        e.Handler<AmpqTest.Messages.TestMessage>(async context =>
                         {
                             try
                             {
@@ -96,13 +96,4 @@ var appTitle = new FigletText("ActiveMQ Test App")
                 AnsiConsole.MarkupLine($"[bold red]Failed to send message: {ex.Message}[/]");
             }
         }
-
-        public class TestMessage
-        {
-            public TestMessage(string text)
-            {
-                Text = text;
-            }
-
-            public string Text { get; set; }
-        }
+          
