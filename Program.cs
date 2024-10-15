@@ -8,10 +8,10 @@ var appTitle = new FigletText("ActiveMQ Test App")
             AnsiConsole.Write(appTitle);
 
             //string defaultHost = "ex-aao-all-0-svc-rte-amq.apps.ocp.minvivienda.gov.co";
-            string defaultHost = "ex-aao-ss-0.ex-aao-hdls-svc.amq.svc.cluster.local";
+            string defaultHost = "172.30.192.199";
             string defaultUsername = "vcnhyZM6";
             string defaultPassword = "a0JNynz";
-            int defaultPort = 61616;
+            int defaultPort = 5672;
 
             string host = Environment.GetEnvironmentVariable("AMQ_HOST") ?? defaultHost;
             string username = Environment.GetEnvironmentVariable("AMQ_USERNAME") ?? defaultUsername;
