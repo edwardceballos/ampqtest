@@ -26,11 +26,11 @@ var appTitle = new FigletText("ActiveMQ Test App")
             {
                 var busControl = Bus.Factory.CreateUsingActiveMq(cfg =>
                 {
-                    cfg.Host(host, port, h =>
+                    cfg.Host(defaultHost, defaultPort, h =>
                     {
                      h.UseSsl();
-                        h.Username(username);
-                        h.Password(password);
+                        h.Username(defaultUsername);
+                        h.Password(defaultPassword);
                     });
 
                     cfg.ReceiveEndpoint("test-queue", e =>
