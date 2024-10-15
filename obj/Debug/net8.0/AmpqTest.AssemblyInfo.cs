@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmpqTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36697ad6dc8428059fe7fb0b5f3e0fbee62f2ae8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59b4224f05e6fc383a0321c86262a8d838ea6d83")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmpqTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmpqTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

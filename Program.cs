@@ -28,6 +28,7 @@ var appTitle = new FigletText("ActiveMQ Test App")
                 {
                     cfg.Host(host, port, h =>
                     {
+                     h.UseSsl();
                         h.Username(username);
                         h.Password(password);
                     });
