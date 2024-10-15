@@ -7,7 +7,8 @@ var appTitle = new FigletText("ActiveMQ Test App")
                 .Color(Color.Green);
             AnsiConsole.Write(appTitle);
 
-            string defaultHost = "ex-aao-all-0-svc-rte-amq.apps.ocp.minvivienda.gov.co";
+            //string defaultHost = "ex-aao-all-0-svc-rte-amq.apps.ocp.minvivienda.gov.co";
+            string defaultHost = "ex-aao-ss-0.ex-aao-hdls-svc.amq.svc.cluster.local";
             string defaultUsername = "vcnhyZM6";
             string defaultPassword = "a0JNynz";
             int defaultPort = 61616;
@@ -28,7 +29,6 @@ var appTitle = new FigletText("ActiveMQ Test App")
                 {
                     cfg.Host(defaultHost, defaultPort, h =>
                     {
-                     h.UseSsl();
                         h.Username(defaultUsername);
                         h.Password(defaultPassword);
                     });
